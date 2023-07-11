@@ -2,9 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-PROJECT		:= go.mozilla.org/sops/v3
-GO 		:= GOPROXY=https://proxy.golang.org go
-GOLINT 		:= golint
+PROJECT := go.mozilla.org/sops/v3
+GO      := GOPROXY=https://proxy.golang.org go
+GOLINT  := golint
 
 all: test vet generate install functional-tests
 origin-build: test vet generate install functional-tests-all
